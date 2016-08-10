@@ -1,0 +1,10 @@
+[Unit]
+Description=Bln Peer-to-Peer Network Daemon
+ 
+[Service]
+Type=simple
+User=nobody
+ExecStart=/usr/bin/blnd --conf=/etc/blnd/blnd.cfg
+ 
+[Install]
+WantedBy=multi-user.target
